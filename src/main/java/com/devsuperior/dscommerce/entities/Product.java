@@ -28,10 +28,6 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name){
-        this.name = name;
-    }
-
     @OneToMany(mappedBy = "id.product")
     private Set<OrderItem> items = new HashSet<>();
 
