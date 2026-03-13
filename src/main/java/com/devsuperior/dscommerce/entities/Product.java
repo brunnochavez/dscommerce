@@ -28,6 +28,10 @@ public class Product {
     public Product() {
     }
 
+    public Product(String name){
+        this.name = name;
+    }
+
     @OneToMany(mappedBy = "id.product")
     private Set<OrderItem> items = new HashSet<>();
 
@@ -86,7 +90,6 @@ public class Product {
     public Set<OrderItem> getItems() {
         return items;
     }
-
 
     public List<Order> getOrders() {
         return items.stream().map(x -> x.getOrder()).toList();
