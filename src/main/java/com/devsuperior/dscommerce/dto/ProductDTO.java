@@ -30,8 +30,6 @@ public class ProductDTO {
         imgUrl = entity.getImgUrl();
     }
 
-
-
     public Long getId() {
         return id;
     }
