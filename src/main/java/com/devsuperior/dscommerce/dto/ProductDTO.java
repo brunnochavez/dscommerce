@@ -2,7 +2,7 @@ package com.devsuperior.dscommerce.dto;
 import com.devsuperior.dscommerce.entities.Product;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonPropertyOrder({"id", "name", "description", "price", "umgUrl"})
+@JsonPropertyOrder({"id", "name", "description", "price", "imgUrl"})
 public class ProductDTO {
 
     private Long id;
